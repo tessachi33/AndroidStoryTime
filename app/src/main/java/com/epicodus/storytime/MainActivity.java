@@ -1,6 +1,7 @@
 package com.epicodus.storytime;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -24,7 +25,14 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v) {
                 String name = mNameField.getText().toString();
+                startStory(name);
             }
         });
+    }
+
+    private void startStory(String name) {
+        Intent intent = new Intent(this, StoryActivity.class);
+        intent.putExtra("name", name);
+        startActivity(intent);
     }
 }
