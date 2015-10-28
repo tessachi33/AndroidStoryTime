@@ -2,9 +2,10 @@ package com.epicodus.storytime;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.Button;
-
+import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
@@ -18,5 +19,13 @@ public class MainActivity extends Activity {
 
         mNameField = (EditText) findViewById(R.id.name);
         mStartButton = (Button) findViewById(R.id.startButton);
+
+        mStartButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String name = mNameField.getText().toString();
+                Toast.makeText(MainActivity.this, name, Toast.LENGTH_LONG).show();
+            }
+        });
     }
 }
