@@ -6,8 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Button;
-import android.widget.Toast;
-import android.content.
+
 
 public class MainActivity extends Activity {
 
@@ -33,7 +32,7 @@ public class MainActivity extends Activity {
 
     private void startStory(String name) {
         Intent intent = new Intent(this, StoryActivity.class);
-        intent.putExtra(getString(R.string.key_name));
+        intent.putExtra(getString(R.string.key_name), name);
         startActivity(intent);
     }
 }
