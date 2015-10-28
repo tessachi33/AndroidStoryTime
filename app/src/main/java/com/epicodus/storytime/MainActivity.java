@@ -8,7 +8,7 @@ import android.widget.Button;
 
 public class MainActivity extends Activity {
 
-    private EditText mNameF;
+    private EditText mNameField;
     private Button mStartButton;
 
     @Override
