@@ -24,7 +24,6 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v) {
                 String name = mNameField.getText().toString();
-                Toast.makeText(MainActivity.this, name, Toast.LENGTH_LONG).show();
             }
         });
     }
