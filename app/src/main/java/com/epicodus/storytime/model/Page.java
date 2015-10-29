@@ -5,6 +5,7 @@ package com.epicodus.storytime.model;
  */
 public class Page {
 
+
     public int getImageId() {
         return mImageId;
     }
@@ -42,6 +43,16 @@ public class Page {
     private Choice mChoice1;
     private Choice mChoice2;
 
+    public boolean isFinal() {
+        return mIsFinal;
+    }
+
+    public void setIsFinal(boolean isFinal) {
+        mIsFinal = isFinal;
+    }
+
+    private boolean mIsFinal = false;
+
 
     public Page(int imageId, String Text,Choice choice1, Choice choice2){
 
@@ -51,9 +62,17 @@ public class Page {
         mChoice2 = choice2;
     }
 
-    public Choice(String text, int nextPage) {
+    public Choice(String text, int nextPage){
         mText = text;
         mNextPage = nextPage;
+    }
+
+    public Page (int imageId, String text){
+        mImageId = imageId;
+        mText = text;
+        mChoice1 = null;
+        mChoice2 = null;
+        mIsFinal = true;
     }
 
 }
