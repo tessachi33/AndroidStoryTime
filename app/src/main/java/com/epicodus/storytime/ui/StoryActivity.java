@@ -23,6 +23,7 @@ public class StoryActivity extends AppCompatActivity {
 
         Log.d(TAG, name);
 
+
     }
 
 }
