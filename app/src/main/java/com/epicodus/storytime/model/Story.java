@@ -1,4 +1,4 @@
-package com.epicodus.storytime.model
+package com.epicodus.storytime.model;
 /**
  * Created by Tessa on 10/29/15.
  */
@@ -8,6 +8,10 @@ package com.epicodus.storytime.model
 public class Story {
 
     private Page[] mPages;
+
+    public Story(){
+        mPages = new Page[7];
+    }
 
 }
 
