@@ -42,12 +42,18 @@ public class Page {
     private Choice mChoice1;
     private Choice mChoice2;
 
+
     public Page(int imageId, String Text,Choice choice1, Choice choice2){
 
         mImageId = imageId;
         mText = Text;
         mChoice1 = choice1;
         mChoice2 = choice2;
+    }
+
+    public Choice(String text, int nextPage) {
+        mText = text;
+        mNextPage = nextPage;
     }
 
 }
