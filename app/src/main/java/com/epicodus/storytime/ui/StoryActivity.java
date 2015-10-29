@@ -1,9 +1,11 @@
-package com.epicodus.storytime;
+package com.epicodus.storytime.ui;
 
 import android.os.Bundle;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+
+import com.epicodus.storytime.R;
 
 public class StoryActivity extends AppCompatActivity {
 
