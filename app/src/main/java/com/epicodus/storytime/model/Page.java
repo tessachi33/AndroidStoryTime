@@ -10,4 +10,11 @@ public class Page {
     private Choice mChoice1;
     private Choice mChoice2;
 
+    public int getmImageId() {
+        return getmImageId();
+    }
+
+    public void setmImageId(int id){
+        mImageId = id;
+    }
 }
